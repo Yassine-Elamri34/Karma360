@@ -904,7 +904,7 @@ function Sales() {
         <section className="rounded-2xl border border-slate-200 bg-white shadow-sm">
           <div className="border-b border-slate-100 p-5">
             <h2 className="font-bold text-slate-900">
-              Sales History.
+              Sales History
             </h2>
 
             <p className="mt-1 text-xs text-slate-500">
