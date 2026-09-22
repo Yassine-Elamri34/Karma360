@@ -2,6 +2,8 @@ import { Routes, Route, Navigate } from "react-router-dom";
 
 import Sidebar from "./components/Sidebar.jsx";
 import Sales from "./pages/Sales.jsx";
+import Expenses from "./pages/Expenses.jsx";
+
 
 function PlaceholderPage({ title }) {
   return (
@@ -65,9 +67,9 @@ function App() {
           />
 
           <Route
-            path="/expenses"
-            element={<PlaceholderPage title="Expenses" />}
-          />
+  path="/expenses"
+  element={<Expenses />}
+/>
 
           <Route
             path="/employees"
