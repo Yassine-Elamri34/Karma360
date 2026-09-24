@@ -76,7 +76,10 @@ function App() {
   path="/employees"
   element={<Employees />}
 />
-
+   <Route
+            path="/schedule"
+            element={<PlaceholderPage title="Schedule" />}
+          />
           <Route
             path="/suppliers"
             element={<PlaceholderPage title="Suppliers" />}

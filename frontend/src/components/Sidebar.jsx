@@ -10,6 +10,7 @@ import {
   ReceiptText,
   WalletCards,
   UserRoundCog,
+  CalendarClock,
   Truck,
   BarChart3,
   TrendingUp,
@@ -63,6 +64,11 @@ function Sidebar() {
       name: "Employees",
       icon: UserRoundCog,
       path: "/employees",
+    },
+     {
+      name: "schedule",
+      icon: CalendarClock,
+      path: "/schedule",
     },
     {
       name: "Suppliers",
