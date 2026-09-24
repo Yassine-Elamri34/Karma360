@@ -1,5 +1,6 @@
 import { Routes, Route, Navigate } from "react-router-dom";
 
+import Employees from "./pages/Employees.jsx";
 import Sidebar from "./components/Sidebar.jsx";
 import Sales from "./pages/Sales.jsx";
 import Expenses from "./pages/Expenses.jsx";
@@ -71,10 +72,10 @@ function App() {
   element={<Expenses />}
 />
 
-          <Route
-            path="/employees"
-            element={<PlaceholderPage title="Employees" />}
-          />
+         <Route
+  path="/employees"
+  element={<Employees />}
+/>
 
           <Route
             path="/suppliers"
