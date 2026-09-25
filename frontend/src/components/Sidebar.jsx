@@ -139,12 +139,15 @@ function Sidebar() {
   return (
     <aside
       className={`
-        sticky top-0 h-screen flex-shrink-0
-        border-r border-slate-200/70
-        bg-gradient-to-b from-white via-white to-slate-50
-        transition-all duration-300
-        ${collapsed ? "w-20" : "w-72"}
-      `}
+    sticky top-0 h-screen flex-shrink-0
+    border-r border-slate-200/70
+    bg-gradient-to-b from-white via-white to-slate-50
+    transition-all duration-300
+    overflow-y-auto
+    [scrollbar-width:none]
+    [&::-webkit-scrollbar]:hidden
+    ${collapsed ? "w-20" : "w-72"}
+  `}
     >
       <div className="flex h-full flex-col">
 
