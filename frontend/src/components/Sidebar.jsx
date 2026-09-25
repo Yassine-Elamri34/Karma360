@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-
+import Logo from "./Logo.jsx";
 import {
   LayoutDashboard,
   BadgeDollarSign,
@@ -101,21 +101,9 @@ function Sidebar() {
     <aside className="sticky top-0 h-screen w-64 flex-shrink-0 overflow-y-auto border-r border-slate-200 bg-white px-3 py-5">
       
       {/* Logo */}
-      <div className="mb-8 flex items-center gap-3 px-3">
-        <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-teal-600 text-white">
-          <BarChart3 size={25} />
-        </div>
-
-        <div>
-          <h1 className="text-xl font-bold text-slate-900">
-            Karma360
-          </h1>
-
-          <p className="text-[10px] text-slate-400">
-            Manage. Analyze. Grow.
-          </p>
-        </div>
-      </div>
+     <div className="mb-7">
+  <Logo />
+</div>
 
       {/* Navigation */}
       <nav className="flex flex-col gap-1">

@@ -1,5 +1,9 @@
 import { Routes, Route, Navigate } from "react-router-dom";
 
+
+
+
+import Schedule from "./pages/Schedule.jsx";
 import Employees from "./pages/Employees.jsx";
 import Sidebar from "./components/Sidebar.jsx";
 import Sales from "./pages/Sales.jsx";
@@ -77,9 +81,9 @@ function App() {
   element={<Employees />}
 />
    <Route
-            path="/schedule"
-            element={<PlaceholderPage title="Schedule" />}
-          />
+  path="/schedule"
+  element={<Schedule />}
+/>
           <Route
             path="/suppliers"
             element={<PlaceholderPage title="Suppliers" />}
