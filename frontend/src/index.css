@@ -1,9 +1,230 @@
 @import "tailwindcss";
 
-* {
-  box-sizing: border-box;
+/* =========================
+   KARMA360 LIVE LOGO
+========================= */
+
+.karma-logo {
+  animation: karma-logo-float 4s ease-in-out infinite;
 }
 
-body {
-  margin: 0;
+/* Bars continuously move */
+
+.karma-bar {
+  transform-origin: bottom;
+}
+
+.karma-bar-1 {
+  height: 9px;
+  animation: karma-bar-one 1.8s ease-in-out infinite;
+}
+
+.karma-bar-2 {
+  height: 18px;
+  animation: karma-bar-two 1.8s ease-in-out infinite;
+}
+
+.karma-bar-3 {
+  height: 13px;
+  animation: karma-bar-three 1.8s ease-in-out infinite;
+}
+
+.karma-bar-4 {
+  height: 23px;
+  animation: karma-bar-four 1.8s ease-in-out infinite;
+}
+
+
+/* DATA ORBIT */
+
+.karma-orbit {
+  animation: karma-orbit 5s linear infinite;
+}
+
+
+/* ROTATING DASHED RING */
+
+.karma-ring {
+  animation: karma-ring 12s linear infinite;
+}
+
+
+/* MOVING BACKGROUND GLOW */
+
+.karma-glow {
+  background:
+    radial-gradient(
+      circle at 30% 30%,
+      rgba(255, 255, 255, 0.35),
+      transparent 45%
+    );
+
+  animation: karma-glow 3.5s ease-in-out infinite;
+}
+
+
+/* 360 TEXT */
+
+.karma-360 {
+  background: linear-gradient(
+    90deg,
+    #0d9488,
+    #2563eb,
+    #0d9488
+  );
+
+  background-size: 200% auto;
+
+  color: transparent;
+
+  background-clip: text;
+  -webkit-background-clip: text;
+
+  animation: karma-text-flow 4s linear infinite;
+}
+
+
+/* LIVE STATUS DOT */
+
+.karma-live-dot {
+  animation: karma-live-pulse 1.8s ease-in-out infinite;
+}
+
+
+/* =========================
+   ANIMATIONS
+========================= */
+
+@keyframes karma-bar-one {
+  0%,
+  100% {
+    height: 9px;
+  }
+
+  50% {
+    height: 20px;
+  }
+}
+
+@keyframes karma-bar-two {
+  0%,
+  100% {
+    height: 18px;
+  }
+
+  50% {
+    height: 11px;
+  }
+}
+
+@keyframes karma-bar-three {
+  0%,
+  100% {
+    height: 13px;
+  }
+
+  50% {
+    height: 25px;
+  }
+}
+
+@keyframes karma-bar-four {
+  0%,
+  100% {
+    height: 23px;
+  }
+
+  50% {
+    height: 15px;
+  }
+}
+
+
+@keyframes karma-orbit {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+@keyframes karma-ring {
+  from {
+    transform: rotate(360deg);
+  }
+
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+
+@keyframes karma-logo-float {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-2px);
+  }
+}
+
+
+@keyframes karma-glow {
+  0%,
+  100% {
+    opacity: 0.35;
+    transform: scale(1);
+  }
+
+  50% {
+    opacity: 0.9;
+    transform: scale(1.25);
+  }
+}
+
+
+@keyframes karma-text-flow {
+  from {
+    background-position: 0% center;
+  }
+
+  to {
+    background-position: 200% center;
+  }
+}
+
+
+@keyframes karma-live-pulse {
+  0%,
+  100% {
+    opacity: 1;
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.3);
+  }
+
+  50% {
+    opacity: 0.65;
+    transform: scale(0.8);
+    box-shadow: 0 0 0 5px rgba(16, 185, 129, 0);
+  }
+}
+
+
+/* Accessibility */
+
+@media (prefers-reduced-motion: reduce) {
+  .karma-logo,
+  .karma-bar,
+  .karma-orbit,
+  .karma-ring,
+  .karma-glow,
+  .karma-360,
+  .karma-live-dot {
+    animation: none !important;
+  }
 }

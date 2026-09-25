@@ -98,7 +98,10 @@ function Sidebar() {
   ];
 
   return (
-    <aside className="sticky top-0 h-screen w-64 flex-shrink-0 overflow-y-auto border-r border-slate-200 bg-white px-3 py-5">
+    <aside className="sticky top-0 h-screen w-64 flex-shrink-0
+    overflow-y-auto border-r border-slate-200
+    bg-gradient-to-b from-white via-white to-slate-50
+    px-3 py-5">
       
       {/* Logo */}
      <div className="mb-7">
