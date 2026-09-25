@@ -5,7 +5,7 @@
 ========================= */
 
 .karma-logo {
-  animation: karma-logo-float 4s ease-in-out infinite;
+  animation: karma-logo-float 8s ease-in-out infinite;
 }
 
 /* Bars continuously move */
@@ -16,36 +16,36 @@
 
 .karma-bar-1 {
   height: 9px;
-  animation: karma-bar-one 1.8s ease-in-out infinite;
+  animation: karma-bar-one 5s ease-in-out infinite;
 }
 
 .karma-bar-2 {
   height: 18px;
-  animation: karma-bar-two 1.8s ease-in-out infinite;
+  animation: karma-bar-two 5.5s ease-in-out infinite;
 }
 
 .karma-bar-3 {
   height: 13px;
-  animation: karma-bar-three 1.8s ease-in-out infinite;
+  animation: karma-bar-three 6s ease-in-out infinite;
 }
 
 .karma-bar-4 {
   height: 23px;
-  animation: karma-bar-four 1.8s ease-in-out infinite;
+  animation: karma-bar-four 5.8s ease-in-out infinite;
 }
 
 
 /* DATA ORBIT */
 
 .karma-orbit {
-  animation: karma-orbit 5s linear infinite;
+  animation: karma-orbit 14s linear infinite;
 }
 
 
 /* ROTATING DASHED RING */
 
 .karma-ring {
-  animation: karma-ring 12s linear infinite;
+  animation: karma-ring 22s linear infinite;
 }
 
 
@@ -55,11 +55,11 @@
   background:
     radial-gradient(
       circle at 30% 30%,
-      rgba(255, 255, 255, 0.35),
+      rgba(255, 255, 255, 0.25),
       transparent 45%
     );
 
-  animation: karma-glow 3.5s ease-in-out infinite;
+  animation: karma-glow 8s ease-in-out infinite;
 }
 
 
@@ -80,14 +80,14 @@
   background-clip: text;
   -webkit-background-clip: text;
 
-  animation: karma-text-flow 4s linear infinite;
+  animation: karma-text-flow 10s linear infinite;
 }
 
 
 /* LIVE STATUS DOT */
 
 .karma-live-dot {
-  animation: karma-live-pulse 1.8s ease-in-out infinite;
+  animation: karma-live-pulse 4s ease-in-out infinite;
 }
 
 
@@ -102,7 +102,7 @@
   }
 
   50% {
-    height: 20px;
+    height: 18px;
   }
 }
 
@@ -113,7 +113,7 @@
   }
 
   50% {
-    height: 11px;
+    height: 12px;
   }
 }
 
@@ -124,7 +124,7 @@
   }
 
   50% {
-    height: 25px;
+    height: 23px;
   }
 }
 
@@ -135,10 +135,12 @@
   }
 
   50% {
-    height: 15px;
+    height: 16px;
   }
 }
 
+
+/* Slow orbit */
 
 @keyframes karma-orbit {
   from {
@@ -151,6 +153,8 @@
 }
 
 
+/* Very slow ring */
+
 @keyframes karma-ring {
   from {
     transform: rotate(360deg);
@@ -162,6 +166,8 @@
 }
 
 
+/* Very subtle floating */
+
 @keyframes karma-logo-float {
   0%,
   100% {
@@ -169,24 +175,28 @@
   }
 
   50% {
-    transform: translateY(-2px);
+    transform: translateY(-1px);
   }
 }
 
+
+/* Soft glow */
 
 @keyframes karma-glow {
   0%,
   100% {
-    opacity: 0.35;
+    opacity: 0.25;
     transform: scale(1);
   }
 
   50% {
-    opacity: 0.9;
-    transform: scale(1.25);
+    opacity: 0.55;
+    transform: scale(1.08);
   }
 }
 
+
+/* Slow gradient movement on 360 */
 
 @keyframes karma-text-flow {
   from {
@@ -199,18 +209,20 @@
 }
 
 
+/* Calm live pulse */
+
 @keyframes karma-live-pulse {
   0%,
   100% {
     opacity: 1;
     transform: scale(1);
-    box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.3);
+    box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.2);
   }
 
   50% {
-    opacity: 0.65;
-    transform: scale(0.8);
-    box-shadow: 0 0 0 5px rgba(16, 185, 129, 0);
+    opacity: 0.75;
+    transform: scale(0.9);
+    box-shadow: 0 0 0 4px rgba(16, 185, 129, 0);
   }
 }
 
